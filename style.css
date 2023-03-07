@@ -170,80 +170,73 @@ nav a {
   }
 }
 
-/* Estilos generales para la sección footer */
+/* Estilo del footer */
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 50px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 50px;
+  background-color: #232323; /* Color de fondo */
+  color: #ffffff; /* Color del texto */
+  padding: 60px 0; /* Espaciado */
 }
 
-/* Estilos para la primera columna del footer */
-.footer-col img {
-  max-width: 100%;
+/* Estilo para la imagen del logo */
+footer img {
+  width: 150px; /* Ancho de la imagen */
+  margin-bottom: 20px; /* Espaciado debajo de la imagen */
 }
 
-/* Estilos para la segunda y tercera columnas del footer */
-.footer-col ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* Estilo para los párrafos del footer */
+footer p {
+  font-size: 14px; /* Tamaño de la fuente */
+  margin-bottom: 20px; /* Espaciado debajo de los párrafos */
 }
 
-.footer-col h3 {
-  margin-bottom: 20px;
+/* Estilo para los títulos del footer */
+footer h3 {
+  font-size: 18px; /* Tamaño de la fuente */
+  margin-bottom: 30px; /* Espaciado debajo de los títulos */
 }
 
-.footer-col li {
-  margin-bottom: 10px;
-}
-
-.footer-col a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer-col a:hover {
-  text-decoration: underline;
-}
-
-/* Estilos para la cuarta columna del footer */
-.social-icons {
-  display: flex;
-}
-
+/* Estilo para los iconos de las redes sociales */
 .social-icons a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background-color: #fff;
-  margin-right: 10px;
+  display: inline-block; /* Hace que los iconos se muestren en línea */
+  margin-right: 10px; /* Espaciado entre los iconos */
+  background-color: #ffffff; /* Color de fondo */
+  color: #232323; /* Color del icono */
+  width: 40px; /* Ancho del icono */
+  height: 40px; /* Altura del icono */
+  line-height: 40px; /* Alineación vertical */
+  text-align: center; /* Alineación horizontal */
+  border-radius: 50%; /* Hace que el icono sea circular */
+  font-size: 18px; /* Tamaño de la fuente */
+  transition: all 0.3s ease-in-out; /* Animación en hover */
 }
 
+/* Estilo para los iconos de las redes sociales en hover */
 .social-icons a:hover {
-  background-color: #ddd;
+  background-color: #f9a602; /* Cambia el color de fondo */
+  color: #ffffff; /* Cambia el color del icono */
+  transform: translateY(-3px); /* Agrega una animación de desplazamiento */
 }
 
-.social-icons i {
-  font-size: 20px;
-  color: #333;
+/* Estilo para la sección de "footer-bottom" */
+footer .footer-bottom {
+  border-top: 1px solid #4d4d4d; /* Agrega un borde superior */
+  padding-top: 20px; /* Espaciado en la parte superior */
+  margin-top: 40px; /* Espaciado en la parte inferior */
+  text-align: center; /* Alineación horizontal */
+  font-size: 14px; /* Tamaño de la fuente */
 }
 
-/* Estilos para el footer inferior */
-.footer-bottom {
-  grid-column: 1/-1;
-  text-align: center;
-  margin-top: 50px;
-  border-top: 1px solid #fff;
-  padding-top: 20px;
-  font-size: 14px;
+/* Estilo para los enlaces de la sección "footer-bottom" */
+footer .footer-bottom a {
+  color: #ffffff; /* Cambia el color del enlace */
 }
 
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 767px) {
+  footer .col-md-4 {
+    margin-bottom: 30px; /* Espaciado entre columnas */
+  }
+}
 /* Estilos para la sección de contacto */
 main {
   padding: 50px 20px;
