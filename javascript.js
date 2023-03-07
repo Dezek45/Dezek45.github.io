@@ -1,41 +1,51 @@
-// Alerta en el botón "Ver nuestros servicios" (Sección Hero) //
-const heroButton = document.querySelector(".hero .btn-cta");
+// Index //
 
-heroButton.addEventListener("click", function(event) {
-  event.preventDefault();
-  alert("Lo sentimos, esta sección está en construcción.");
-});
+// Nosotros //
 
-// Alerta en el botón "Ver nuestros servicios" (Diseño web) //
-const button = document.querySelector(".dos-columnas .btn-cta");
-const servicesSection = document.querySelector(".servicios");
 
-button.addEventListener("click", function(event) {
-  event.preventDefault();
-  servicesSection.scrollIntoView({ behavior: "smooth" });
-});
+// Contacto //
 
-// Efectos hover en los elementos del menú de navegación //
-const navLinks = document.querySelectorAll("nav a");
+// Obtener el formulario
+const form = document.querySelector('form');
 
-navLinks.forEach(link => {
-  link.addEventListener("mouseover", function() {
-    this.style.textDecoration = "underline";
+// Escuchar el evento submit del formulario
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); // Prevenir el envío por defecto del formulario
+
+  // Obtener los valores de los campos del formulario
+  const nombre = document.querySelector('#nombre').value;
+  const correo = document.querySelector('#correo').value;
+  const mensaje = document.querySelector('#mensaje').value;
+
+  // Validar que los campos no estén vacíos
+  if (nombre.trim() === '' || correo.trim() === '' || mensaje.trim() === '') {
+    alert('Por favor complete todos los campos.');
+    return;
+  }
+
+  // Crear el objeto FormData y agregar los valores del formulario
+  const formData = new FormData();
+  formData.append('nombre', nombre);
+  formData.append('correo', correo);
+  formData.append('mensaje', mensaje);
+
+  // Enviar los datos del formulario utilizando Fetch API
+  fetch('enviar.php', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Mostrar el mensaje de éxito o error según la respuesta del servidor
+    if (data.status === 'success') {
+      alert('El mensaje ha sido enviado.');
+    } else {
+      alert('Ha ocurrido un error. Por favor intente nuevamente.');
+    }
+  })
+  .catch(error => {
+    // Mostrar el mensaje de error en caso de que la petición falle
+    console.error('Error:', error);
+    alert('Ha ocurrido un error. Por favor intente nuevamente.');
   });
-  
-  link.addEventListener("mouseout", function() {
-    this.style.textDecoration = "";
-  });
-});
-
-// Color de fondo del header al hacer hover sobre el log //
-const logo = document.querySelector(".logo img");
-const header = document.querySelector("header");
-
-logo.addEventListener("mouseover", function() {
-  header.style.backgroundColor = "gray";
-});
-
-logo.addEventListener("mouseout", function() {
-  header.style.backgroundColor = "";
 });
