@@ -1,183 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Portafolio</title>
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://cdn-icons-png.flaticon.com/512/943/943026.png"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    />
-    <style>
-      body {
-        background-color: #f4f4f4;
-      }
-      .hero-section {
-        background-image: url("https://cdn.pixabay.com/photo/2016/10/11/21/43/geometric-1732847_1280.jpg");
-        background-size: cover;
-        background-position: center;
-        padding: 100px 0;
-        color: #fff;
-        text-align: center;
-      }
-      .hero-section h1 {
-        font-size: 3em;
-        margin-bottom: 1em;
-      }
-      .hero-section p {
-        font-size: 1.5em;
-        margin-bottom: 2em;
-      }
-      .projects-section {
-        padding: 50px 0;
-      }
-      .projects-section h2 {
-        margin-bottom: 3em;
-        text-align: center;
-      }
-      .card {
-        border: none;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      }
-      .card:hover {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-        transform: translateY(-5px);
-      }
-      .card-title {
-        font-size: 1.2em;
-        margin-bottom: 1em;
-      }
-      .card-text {
-        font-size: 1em;
-        margin-bottom: 1.5em;
-      }
-      .contact-section {
-        padding: 50px 0;
-        text-align: center;
-      }
-      .contact-section h2 {
-        margin-bottom: 2em;
-      }
-      .contact-section p {
-        font-size: 1.2em;
-        margin-bottom: 2em;
-      }
-      .contact-section ul {
-        list-style: none;
-        padding-left: 0;
-      }
-      .contact-section li {
-        font-size: 1.2em;
-        margin-bottom: 1em;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Esto es un portafolio de ejemplo -->
-    <main class="main">
-      <!-- Sección de encabezado -->
-      <section class="hero-section">
-        <div class="container">
-          <h1 class="display-4 mb-4">Bienvenidos a mi portafolio</h1>
-          <p class="lead">
-            ¡Hola! Soy Dezek Rojas, un principiante en el desarrollo web. Aquí
-            encontrarás algunos de mis proyectos y habilidades en HTML, CSS y
-            JavaScript. ¡Espero que disfrutes navegando por mi portafolio!
-          </p>
-          <a href="#projects" class="btn btn-primary btn-lg">Ver Proyectos</a>
-        </div>
-      </section>
-      <!-- Sección de Proyectos -->
-      <section id="projects" class="projects-section">
-        <div class="container">
-          <h2 class="mb-5">Mis Proyectos</h2>
-          <div class="row">
-            <!-- Tarjeta de proyecto 1 -->
-            <div class="col-md-4 mb-4">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGltYWdlbmVzJTIwcGFyYSUyMHBvcnRhZm9saW98ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                  alt="Proyecto 1"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Proyecto 1</h5>
-                  <p class="card-text">
-                    Desarrollo de una página web para una pequeña empresa local.
-                    Utilicé HTML, CSS y JavaScript para crear un sitio web
-                    responsivo y fácil de navegar.
-                  </p>
-                  <a href="#" class="btn btn-primary">Ver más</a>
-                </div>
-              </div>
-            </div>
-            <!-- Tarjeta de proyecto 2 -->
-            <div class="col-md-4 mb-4">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGltYWdlbmVzJTIwcGFyYSUyMHBvcnRhZm9saW98ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                  alt="Proyecto 2"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Proyecto 2</h5>
-                  <p class="card-text">
-                    Desarrollo de una página de inicio para una aplicación de
-                    citas. Utilicé Bootstrap para crear un diseño moderno y
-                    elegante que destacara las características únicas de la
-                    aplicación.
-                  </p>
-                  <a href="#" class="btn btn-primary">Ver más</a>
-                </div>
-              </div>
-            </div>
-            <!-- Tarjeta de proyecto 3 -->
-            <div class="col-md-4 mb-4">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="https://cdn.pixabay.com/photo/2019/03/03/14/38/hacker-4031973_1280.jpg"
-                  alt="Proyecto 3"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Proyecto 3</h5>
-                  <p class="card-text">Proximamente...</p>
-                  <a href="#" class="btn btn-primary">Ver más</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Tarjeta de Contacto -->
-      <section id="contact" class="contact-section">
-        <div class="container">
-          <h2 class="mb-5">Contáctame</h2>
-          <p>
-            Si estás interesado en trabajar conmigo o tienes alguna pregunta, no
-            dudes en contactarme. Puedes encontrarme en:
-          </p>
-          <ul>
-            <li>Correo electrónico: ejemplo@ejemplo.com</li>
-            <li>Teléfono: +1 (123) 456-7890</li>
-            <li>Dirección: 123 Calle Principal, Ciudad, País</li>
-          </ul>
-        </div>
-      </section>
-      <!-- Tarjeta de Script -->
-    </main>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <footer>
-      <!-- Copyright -->
-      <p>&copy; 2023, Dezek. Todos los derechos reservados.</p>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto</title>
+  <meta name="Ideas para Página" content="Descripcion de la página" />
+  <link rel="stylesheet" href="style1.css" />
+  <script src="javascript.js"></script>
+</head>
+<body>
+  <!-- Sección Header -->
+  <header>
+    <div class="logo">
+      <a href="#"><img src="https://github.com/Dezek45/Dezek45.github.io/blob/d5e875da757f845476111c4c0e1f2c53b0f6178e/MiLogo.png" alt="Logo de la empresa" /></a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Sección Hero -->
+  <main>
+    <section class="hero">
+      <h1>Bienvenidos a mi página web</h1>
+      <p>
+        Somos una empresa dedicada a ofrecer soluciones tecnológicas de
+        calidad para tu negocio.
+      </p>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=1" class="btn-cta">Ver nuestros servicios</a>
+    </section>
+  </main>
+  
+  <!-- Sección de Columnas -->
+  <section class="dos-columnas">
+    <div class="columna1">
+      <div class="imagen-container">
+        <img src="https://images.pexels.com/photos/251225/pexels-photo-251225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen de ejemplo">
+      </div>
+    </div>
+    <div class="columna2">
+      <h2>Diseño web</h2>
+      <p>Somos una empresa de diseño web especializada en crear soluciones personalizadas y efectivas para tu negocio. Ofrecemos una amplia variedad de servicios de diseño, desde la creación de sitios web básicos hasta el diseño de tiendas en línea y aplicaciones móviles.</p>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=1" class="btn-cta">Ver nuestros servicios</a>
+    </div>
+  </section>
+
+  <!-- Seccion de Galeria -->
+  <section class="galeria">
+    <div class="item">
+      <img
+        src="https://images.pexels.com/photos/67112/pexels-photo-67112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Imagen 1 de la galería"
+      />
+    </div>
+    <div class="item">
+      <img
+        src="https://images.pexels.com/photos/246658/pexels-photo-246658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Imagen 2 de la galería"
+      />
+    </div>
+    <div class="item">
+      <img
+        src="https://images.pexels.com/photos/267371/pexels-photo-267371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Imagen 3 de la galería"
+      />
+    </div>
+    <div class="item">
+      <img
+        src="https://images.pexels.com/photos/4249193/pexels-photo-4249193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Imagen 4 de la galería"
+      />
+    </div>
+    <div class="item">
+      <img
+        src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Imagen 5 de la galería"
+      />
+    </div>
+  </section>
+
+  <!-- Sección Footer-->
+  <footer>
+    <div class="footer-col">
+      <img src="https://github.com/Dezek45/Dezek45.github.io/blob/d5e875da757f845476111c4c0e1f2c53b0f6178e/MiLogo.png" alt="Logo de la empresa" />
+    </div>
+    <div class="footer-col">
+      <h3>Servicios de diseño web</h3>
+      <ul>
+        <li><a href="#">Diseño web personalizado</a></li>
+        <li><a href="#">Diseño web responsive</a></li>
+        <li><a href="#">Optimización para buscadores</a></li>
+        <li><a href="#">Mantenimiento web</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Páginas legales</h3>
+      <ul>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">Aviso legal</a></li>
+        <li><a href="#">Política de cookies</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Síguenos</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2023 Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
 </html>
