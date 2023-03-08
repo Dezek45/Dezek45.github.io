@@ -1,12 +1,12 @@
-//Obtenemos las barras de habilidades
+//Barras de habilidades//
 const barras = document.querySelectorAll('.barra');
 
-//Función para llenar la barra de habilidades
+//Función llenar la barra de habilidades//
 function llenarBarra(barra, porcentaje) {
   barra.style.width = `${porcentaje}%`;
 }
 
-//Función para animar las barras de habilidades
+//Función animar las barras de habilidades//
 function animarBarras() {
   barras.forEach(barra => {
     const porcentaje = barra.dataset.porcentaje;
@@ -21,5 +21,5 @@ function animarBarras() {
   });
 }
 
-//Evento que dispara la animación al cargar la página
+//Animación al cargar la página//
 window.addEventListener('load', animarBarras);
