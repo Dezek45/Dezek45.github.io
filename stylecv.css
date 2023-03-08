@@ -1,0 +1,378 @@
+/* Estilo para todo el documento */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo para la barra de navegación */
+  .nav-bar {
+    display: none;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav a {
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav a:hover {
+    color: #c22d6e;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem;
+  }
+  
+  .color {
+    color: #c22d6e;
+  }
+  
+  /* Estilo para la sección "Inicio" */
+  .inicio {
+    height: 100vh;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .info {
+    margin-top: 3rem;
+  }
+  
+  .info h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+  
+  .info h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-top: 0;
+  }
+  
+  .redes {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .redes a {
+    margin: 0 1rem;
+    color: black;
+  }
+  
+  .redes a:hover {
+    color: #c22d6e;
+  }
+  
+  .foto {
+    margin-top: 3rem;
+  }
+  
+  .foto img {
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  /* Estilo para la sección "Sobre Mi" */
+  .sobremi {
+    background-color: white;
+    padding: 2rem;
+  }
+  
+  .titulo-seccion {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+  
+  .especial {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  .col {
+    margin: 2rem 0;
+  }
+  
+  .col i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+  
+  .titulo-detalle {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Sección Habilidades */
+  .habilidades {
+    background-color: #f8f8f8;
+    padding: 100px 0;
+  }
+  
+  .titulo-seccion {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .habilidades h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  
+  .fila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .col {
+    width: 45%;
+  }
+  
+  .col span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .cont-barra {
+    background-color: #ddd;
+    height: 15px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .barra {
+    height: 100%;
+    background-color: #2196f3;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .cont-barra span {
+    position: absolute;
+    top: -30px;
+    right: 0;
+  }
+  
+  #html {
+    width: 98%;
+  }
+  
+  #javascript {
+    width: 70%;
+  }
+  
+  #wordpress {
+    width: 90%;
+  }
+  
+  #photoshop {
+    width: 85%;
+  }
+  
+  #php {
+    width: 95%;
+  }
+  
+  #ilustrator {
+    width: 75%;
+  }
+  /* Estilo resumen */
+  /* Estilo para la sección Resumen */
+  
+  .resumen {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+  }
+  
+  .titulo-seccion {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .col {
+    flex-basis: 45%;
+  }
+  
+  .titulo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    margin-bottom: 30px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .datos {
+    vertical-align: top;
+    width: 30%;
+  }
+  
+  .descripcion {
+    vertical-align: top;
+    width: 70%;
+  }
+  
+  h3 {
+    margin-bottom: 5px;
+  }
+  
+  h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .promedio {
+    font-weight: bold;
+    margin-left: 10px;
+    color: #555;
+  }
+  
+  .puesto {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilos para los diferentes tipos de tabla */
+  
+  table:first-of-type td {
+    border-top: none;
+  }
+  
+  table:last-of-type td {
+    border-bottom: none;
+  }
+  
+  /* Estilo contacto */
+  .contacto {
+    background-color: #f2f2f2;
+    padding: 80px 0;
+  }
+  
+  .contenido-seccion {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .titulo-seccion {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .col {
+    width: 300px;
+    margin: 0 20px;
+    text-align: left;
+  }
+  
+  .col h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .col i {
+    margin-right: 10px;
+  }
+  
+  .info-contacto {
+    font-size: 20px;
+  }
+  
+  .fila:last-child {
+    margin-bottom: 0;
+  }
+  
+  form {
+    margin-top: 30px;
+    text-align: left;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  
+  form input,
+  form textarea {
+    font-size: 20px;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  form input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .fila:last-child {
+    margin-bottom: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
