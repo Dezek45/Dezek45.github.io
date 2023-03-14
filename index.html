@@ -5,40 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-NfRZBd/miIv6Cx0cX2E/Q0yi3gr6rUwD6ScWn6nJzRfBm6FvV6KBWQXxLzo6q3l6vLoY7cW8zN+5h25vyhNMeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script
+      src="https://kit.fontawesome.com/441dcc466f.js"
+      crossorigin="anonymous"
+    ></script>
     <title>CV David Rojas</title>
   </head>
   <body>
     <!-- SECCION INICIO -->
     <section class="inicio" id="inicio">
+      <!-- HEADER -->
       <div class="contenido-seccion">
         <header>
-          <div class="nav-bar" onclick="mostrarOcultarMenu()">
-            <i class="fa-solid fa-bars"></i>
-          </div>
+          <div class="logo">Dezek<span class="color">Rojas</span></div>
+
+          <!-- NAVEGACIÓN -->
           <nav id="nav" class="nav">
-            <a href="#inicio">Inicio</a>
-            <a href="#sobremi">Sobre mí</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#resumen">Resumen</a>
-            <a href="#contacto">Contacto</a>
+            <ul>
+              <li><a href="#sobremi">Sobre mí</a></li>
+              <li><a href="#habilidades">Habilidades</a></li>
+              <li><a href="#resumen">Resumen</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
           </nav>
-          <div class="logo">Dezek<span2 class="color">Rojas</span2></div>
+
+          <!-- MENÚ HAMBURGUESA -->
+          <div class="nav-bar" onclick="mostrarOcultarMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
         </header>
+
+        <!-- INFORMACIÓN -->
         <div class="info">
           <h1>DAVID ROJAS</h1>
           <h2>CODIFICADOR, DISEÑADOR, PROFESIONAL</h2>
-          <div class="redes">
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          <div class="foto">
+            <img
+              src="https://cdn.glitch.global/6453e4fc-9f75-4ea2-b826-24f6bc6f1f60/MiLogo.png?v=1678206750133"
+              alt="Foto de perfil de David Rojas"
+            />
           </div>
-        </div>
-        <div class="foto">
-          <img src="MiLogo.png" alt="" />
         </div>
       </div>
     </section>
@@ -61,7 +67,7 @@
 
         <div class="fila">
           <div class="col">
-            <i class="fa-solid fa-user"></i>
+            <i class="fas fa-user"></i>
             <span class="titulo-detalle">Perfil</span>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -71,7 +77,7 @@
             </p>
           </div>
           <div class="col">
-            <i class="fa-solid fa-location-pin"></i>
+            <i class="fas fa-location-pin"></i>
             <span class="titulo-detalle">Ubicación</span>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -81,7 +87,7 @@
             </p>
           </div>
           <div class="col">
-            <i class="fa-solid fa-flag"></i>
+            <i class="fas fa-flag"></i>
             <span class="titulo-detalle">Intereses</span>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -96,61 +102,60 @@
 
     <!-- SECCION HABILIDADES -->
     <section class="habilidades" id="habilidades">
-        <div class="contenido-seccion">
-          <h2 class="titulo-seccion">Mis habilidades</h2>
-          <h3>Me especializo en</h3>
-      
-          <div class="fila">
-            <div class="col">
-              <span>HTML/CSS</span>
-              <div class="cont-barra">
-                <div class="barra" id="html" data-porcentaje="98"></div>
-                <span>98%</span>
-              </div>
-            </div>
-            <div class="col">
-              <span>JAVASCRIPT</span>
-              <div class="cont-barra">
-                <div class="barra" id="javascript" data-porcentaje="70"></div>
-                <span>70%</span>
-              </div>
+      <div class="contenido-seccion">
+        <h2 class="titulo-seccion">Mis habilidades</h2>
+        <h3>Me especializo en:</h3>
+        <div class="fila">
+          <div class="col">
+            <span>HTML/CSS</span>
+            <div class="cont-barra">
+              <div class="barra" id="html" data-porcentaje="98"></div>
+              <span>98%</span>
             </div>
           </div>
-          <div class="fila">
-            <div class="col">
-              <span>WORDPRESS</span>
-              <div class="cont-barra">
-                <div class="barra" id="wordpress" data-porcentaje="50"></div>
-                <span>50%</span>
-              </div>
-            </div>
-            <div class="col">
-              <span>PHOTOSHOP</span>
-              <div class="cont-barra">
-                <div class="barra" id="photoshop" data-porcentaje="45"></div>
-                <span>45%</span>
-              </div>
-            </div>
-          </div>
-          <div class="fila">
-            <div class="col">
-              <span>PHP</span>
-              <div class="cont-barra">
-                <div class="barra" id="php" data-porcentaje="30"></div>
-                <span>30%</span>
-              </div>
-            </div>
-            <div class="col">
-              <span>ILUSTRATOR</span>
-              <div class="cont-barra">
-                <div class="barra" id="ilustrator" data-porcentaje="15"></div>
-                <span>15%</span>
-              </div>
+          <div class="col">
+            <span>JAVASCRIPT</span>
+            <div class="cont-barra">
+              <div class="barra" id="javascript" data-porcentaje="70"></div>
+              <span>70%</span>
             </div>
           </div>
         </div>
-      </section>
-      
+        <div class="fila">
+          <div class="col">
+            <span>WORDPRESS</span>
+            <div class="cont-barra">
+              <div class="barra" id="wordpress" data-porcentaje="50"></div>
+              <span>50%</span>
+            </div>
+          </div>
+          <div class="col">
+            <span>PHOTOSHOP</span>
+            <div class="cont-barra">
+              <div class="barra" id="photoshop" data-porcentaje="45"></div>
+              <span>45%</span>
+            </div>
+          </div>
+        </div>
+        <div class="fila">
+          <div class="col">
+            <span>PHP</span>
+            <div class="cont-barra">
+              <div class="barra" id="php" data-porcentaje="30"></div>
+              <span>30%</span>
+            </div>
+          </div>
+          <div class="col">
+            <span>ILLUSTRATOR</span>
+            <div class="cont-barra">
+              <div class="barra" id="illustrator" data-porcentaje="15"></div>
+              <span>15%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- SECCION RESUMEN -->
     <section class="resumen" id="resumen">
       <div class="contenido-seccion">
@@ -191,7 +196,7 @@
                 <td>
                   <h4>Contador Publico</h4>
                   <p>UNaF</p>
-                  <span class="promedio">8.5 PG</span>
+                  <span class="promedio">8 PG</span>
                 </td>
               </tr>
             </table>
@@ -238,94 +243,52 @@
     </section>
 
     <!-- SECCION CONTACTO -->
-    <section class="contacto" id="contacto">
-      <div class="contenido-seccion">
-        <h2 class="titulo-seccion">Contacto</h2>
-        <h3>Ponte en contacto ahora mismo!</h3>
-
-        <div class="fila">
-          <div class="col">
-            <h2><i class="fa-solid fa-phone fa-2x"></i> Teléfono</h2>
-            <a href="tel:+11234567890"
-              ><span class="info-contacto">+1 123-456-7890</span></a
-            >
-          </div>
-          <div class="col">
-            <h2><i class="fa-solid fa-envelope fa-2x"></i> Correo</h2>
-            <a href="mailto:ejemplo@gmail.com"
-              ><span class="info-contacto">ejemplo@gmail.com</span></a
-            >
-          </div>
-          <div class="col">
-            <h2><i class="fa-solid fa-globe fa-2x"></i> Página Web</h2>
-            <a href="#inicio"><span class="info-contacto">Página web</span></a>
-          </div>
-        </div>
-
-        <div class="fila">
-          <div class="col">
-            <h2>Síguenos en redes sociales:</h2>
-            <ul class="reds-sociales">
-              <li>
-                <a href="#"><i class="fa-brands fa-facebook fa-3x"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-twitter fa-3x"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-instagram fa-3x"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-linkedin fa-3x"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="fila">
-          <div class="col">
-            <h2>Envíanos un mensaje:</h2>
-            <form>
-              <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" name="nombre" /><br />
-
-              <label for="email">Correo electrónico:</label>
-              <input type="email" id="email" name="email" /><br />
-
-              <label for="asunto">Asunto:</label>
-              <input type="text" id="asunto" name="asunto" /><br />
-
-              <label for="mensaje">Mensaje:</label><br />
-              <textarea
-                id="mensaje"
-                name="mensaje"
-                rows="4"
-                cols="50"
-              ></textarea
-              ><br />
-
-              <input type="submit" value="Enviar" />
-            </form>
-          </div>
-        </div>
-
-        <div class="fila">
-          <div class="col">
-            <h2>Horario de atención:</h2>
-            <p>Lunes a viernes: 9:00 am - 5:00 pm</p>
-            <h2>Ubicación:</h2>
-            <p>Calle Principal #123, Ciudad, Estado, País</p>
-          </div>
-        </div>
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <div class="datos-contacto">
+        <p><strong>Teléfono:</strong> +1 123 456 789</p>
+        <p><strong>Email:</strong> info@tusitio.com</p>
+        <p><strong>Dirección:</strong> Calle 123, Ciudad, País</p>
+      </div>
+      <div class="redes-sociales">
+        <h3>Síguenos en redes sociales</h3>
+        <ul>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="formulario-contacto">
+        <h3>Envíanos un mensaje</h3>
+        <form action="#" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          <button type="submit">Enviar mensaje</button>
+        </form>
       </div>
     </section>
 
     <!-- COPYRIGHT -->
     <div class="copyright">
-      <p>
-        Derechos de autor © 2023 DezekRojas. Todos los derechos reservados.
-      </p>
+      <p>Derechos de autor © 2023 DezekRojas. Todos los derechos reservados.</p>
     </div>
-    <script src="barra.js"></script>
+    <script src="javascript.js"></script>
   </body>
 </html>
+<!--Utilice la página https://glitch.com para el orden de este HTML -->
