@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-NfRZBd/miIv6Cx0cX2E/Q0yi3gr6rUwD6ScWn6nJzRfBm6FvV6KBWQXxLzo6q3l6vLoY7cW8zN+5h25vyhNMeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>CV David Rojas</title>
   </head>
   <body>
@@ -22,7 +23,7 @@
             <a href="#resumen">Resumen</a>
             <a href="#contacto">Contacto</a>
           </nav>
-          <div class="logo">Dezek<span class="color">Rojas</span></div>
+          <div class="logo">Dezek<span2 class="color">Rojas</span2></div>
         </header>
         <div class="info">
           <h1>DAVID ROJAS</h1>
@@ -41,6 +42,7 @@
         </div>
       </div>
     </section>
+
     <!-- SECCION SOBRE MI -->
     <section class="sobremi" id="sobremi">
       <div class="contenido-seccion">
@@ -244,27 +246,54 @@
         <div class="fila">
           <div class="col">
             <h2><i class="fa-solid fa-phone fa-2x"></i> Teléfono</h2>
-            <span class="info-contacto">3711-*****</span>
+            <a href="tel:+11234567890"
+              ><span class="info-contacto">+1 123-456-7890</span></a
+            >
           </div>
           <div class="col">
             <h2><i class="fa-solid fa-envelope fa-2x"></i> Correo</h2>
-            <span class="info-contacto">ejemplo@gmail.com</span>
+            <a href="mailto:ejemplo@gmail.com"
+              ><span class="info-contacto">ejemplo@gmail.com</span></a
+            >
           </div>
           <div class="col">
             <h2><i class="fa-solid fa-globe fa-2x"></i> Página Web</h2>
-            <span class="info-contacto">Páginaweb.dow</span>
+            <a href="#inicio"><span class="info-contacto">Página web</span></a>
           </div>
         </div>
 
         <div class="fila">
           <div class="col">
-            <h2>O bien, envíanos un mensaje:</h2>
+            <h2>Síguenos en redes sociales:</h2>
+            <ul class="reds-sociales">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook fa-3x"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter fa-3x"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram fa-3x"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="fila">
+          <div class="col">
+            <h2>Envíanos un mensaje:</h2>
             <form>
               <label for="nombre">Nombre:</label>
               <input type="text" id="nombre" name="nombre" /><br />
 
               <label for="email">Correo electrónico:</label>
               <input type="email" id="email" name="email" /><br />
+
+              <label for="asunto">Asunto:</label>
+              <input type="text" id="asunto" name="asunto" /><br />
 
               <label for="mensaje">Mensaje:</label><br />
               <textarea
@@ -282,12 +311,21 @@
 
         <div class="fila">
           <div class="col">
-            <h2><a href="#inicio">Volver al inicio</a></h2>
+            <h2>Horario de atención:</h2>
+            <p>Lunes a viernes: 9:00 am - 5:00 pm</p>
+            <h2>Ubicación:</h2>
+            <p>Calle Principal #123, Ciudad, Estado, País</p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- COPYRIGHT -->
+    <div class="copyright">
+      <p>
+        Derechos de autor © 2023 DezekRojas. Todos los derechos reservados.
+      </p>
+    </div>
     <script src="barra.js"></script>
   </body>
 </html>

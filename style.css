@@ -1,410 +1,447 @@
-/* Estilo para todo el documento */
-body {
-  font-family: "Arial", sans-serif;
+/* Estilos globales */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Estilo para la barra de navegación */
-.nav-bar {
-  display: none;
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.nav {
-  display: flex;
-  justify-content: center;
-}
-
-.nav a {
-  padding: 1rem;
-  text-decoration: none;
-  color: black;
-}
-
-.nav a:hover {
-  color: #c22d6e;
-}
-
-.logo {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 1rem;
-}
-
-.color {
-  color: #c22d6e;
-}
-
-/* Estilo para la sección "Inicio" */
+/* Estilos para la sección "inicio" */
 .inicio {
   height: 100vh;
   background-color: #f5f5f5;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  text-align: center;
-}
-
-.info {
-  margin-top: 3rem;
-}
-
-.info h1 {
-  font-size: 3rem;
-  margin-bottom: 0;
-}
-
-.info h2 {
-  font-size: 1.5rem;
-  font-weight: normal;
-  margin-top: 0;
-}
-
-.redes {
-  display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  align-items: center;
 }
 
-.redes a {
-  margin: 0 1rem;
-  color: black;
-}
-
-.redes a:hover {
-  color: #c22d6e;
-}
-
-.foto {
-  margin-top: 3rem;
-}
-
-.foto img {
-  width: 200px;
-  border-radius: 50%;
-}
-
-/* Estilo para la sección "Sobre Mi" */
-.sobremi {
-  background-color: white;
-  padding: 2rem;
-}
-
-.titulo-seccion {
-  font-size: 2rem;
-  margin-top: 0;
-}
-
-.especial {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-.col {
-  margin: 2rem 0;
-}
-
-.col i {
-  font-size: 1.5rem;
-  margin-right: 1rem;
-}
-
-.titulo-detalle {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-/* Sección Habilidades */
-.habilidades {
-  background-color: #f8f8f8;
-  padding: 50px 0;
-}
-
-.titulo-seccion {
-  font-size: 2rem;
-  font-weight: bold;
+.inicio .contenido-seccion {
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
-  margin-bottom: 30px;
 }
 
-.habilidades h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
-.fila {
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.col {
-  width: 100%;
-  max-width: 400px;
-  margin-bottom: 20px;
-}
-
-.col span {
-  font-size: 1rem;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.cont-barra {
-  background-color: #ddd;
-  height: 10px;
-  border-radius: 5px;
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.barra {
-  height: 100%;
-  background-color: #2196f3;
-  border-radius: 5px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.cont-barra span {
-  position: absolute;
-  top: -20px;
-  right: 0;
-}
-
-#html {
-  width: 100%;
-}
-
-#javascript {
-  width: 100%;
-}
-
-#wordpress {
-  width: 100%;
-}
-
-#photoshop {
-  width: 100%;
-}
-
-#php {
-  width: 100%;
-}
-
-#ilustrator {
-  width: 100%;
-}
-
-/* Estilo resumen */
-
-.resumen {
-  background-color: #f8f8f8;
-  padding: 80px 0;
-}
-
-@media only screen and (max-width: 768px) {
-  .resumen {
-    padding: 50px 0;
-  }
-}
-
-.titulo-seccion {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.info {
+.inicio header {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 50px;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
-.col {
-  flex-basis: 45%;
-}
-
-@media only screen and (max-width: 768px) {
-  .col {
-    flex-basis: 100%;
-  }
-}
-
-.titulo {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-table {
-  margin-bottom: 30px;
-  width: 100%;
-  border-collapse: collapse;
-}
-
-td {
-  padding: 10px;
-  border: 1px solid #ccc;
-}
-
-.datos {
-  vertical-align: top;
-  width: 30%;
-}
-
-@media only screen and (max-width: 768px) {
-  .datos {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-}
-
-.descripcion {
-  vertical-align: top;
-  width: 70%;
-}
-
-@media only screen and (max-width: 768px) {
-  .descripcion {
-    width: 100%;
-  }
-}
-
-h3 {
-  margin-bottom: 5px;
-}
-
-h4 {
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
-.promedio {
-  font-weight: bold;
-  margin-left: 10px;
+.inicio .nav-bar {
+  cursor: pointer;
+  font-size: 1.5rem;
   color: #555;
 }
 
-.puesto {
+.inicio .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inicio .nav a {
+  text-decoration: none;
+  color: #555;
+  margin-right: 1rem;
   font-weight: bold;
-  margin-bottom: 5px;
+  transition: color 0.3s ease-in-out;
 }
 
-/* Estilos para los diferentes tipos de tabla */
-
-table:first-of-type td {
-  border-top: none;
+.inicio .nav a:hover {
+  color: #e74c3c;
 }
 
-table:last-of-type td {
-  border-bottom: none;
+.inicio .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #555;
 }
 
-/* Estilo contacto */
-.contacto {
-  background-color: #f2f2f2;
-  padding: 80px 0;
+.inicio .logo .color {
+  color: #e74c3c;
+}
+
+.inicio .info {
+  margin-top: 2rem;
+}
+
+.inicio .info h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.inicio .info h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.inicio .redes {
+  margin-top: 2rem;
+}
+
+.inicio .redes a {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: #555;
+  transition: color 0.3s ease-in-out;
+}
+
+.inicio .redes a:hover {
+  color: #e74c3c;
+}
+
+.inicio .foto {
+  margin-top: 2rem;
+}
+
+.inicio .foto img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Estilos para la sección "sobre mi" */
+.sobremi {
+  background-color: #f9f9f9;
+  padding: 50px;
 }
 
 .contenido-seccion {
   max-width: 800px;
   margin: 0 auto;
-  text-align: center;
 }
 
 .titulo-seccion {
-  font-size: 48px;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.especial {
+  font-size: 1.3rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .fila {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.col {
+  width: 30%;
+  text-align: center;
+}
+
+.col i {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.titulo-detalle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.col p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Estilo para la sección de habilidades */
+
+/* Estilo para la fila de columnas */
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Estilo para la columna */
+.col {
+  width: 48%;
+  margin-bottom: 30px;
+}
+
+/* Estilo para la habilidad */
+span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Estilo para la barra de habilidad */
+.cont-barra {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Estilo para el porcentaje de habilidad */
+span {
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+/* Estilo para la barra de habilidad */
+.barra {
+  height: 100%;
+  background-color: #6c5ce7;
+}
+
+/* Estilo para la barra de habilidad según su porcentaje */
+#html {
+  width: 98%;
+}
+
+#javascript {
+  width: 70%;
+}
+
+#wordpress {
+  width: 50%;
+}
+
+#photoshop {
+  width: 45%;
+}
+
+#php {
+  width: 30%;
+}
+
+#ilustrator {
+  width: 15%;
+}
+
+/* Estilo para la seccion resumen*/
+.resumen {
+  background-color: #f7f7f7;
+  padding: 80px 0;
+}
+
+.resumen .titulo-seccion {
+  text-align: center;
+}
+
+.resumen h3 {
+  margin-top: 40px;
+}
+
+.resumen .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.resumen .col {
+  width: 45%;
+}
+
+.resumen .titulo {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.resumen table {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.resumen td {
+  vertical-align: top;
+}
+
+.resumen h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.resumen h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.resumen p {
+  font-size: 0.875rem;
+  margin-bottom: 5px;
+}
+
+.resumen .promedio {
+  background-color: #333;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.875rem;
+  margin-left: 10px;
+  padding: 2px 5px;
+}
+
+.resumen .datos {
+  width: 20%;
+}
+
+.resumen .descripcion {
+  width: 80%;
+}
+
+/* Sección de contacto */
+.contacto {
+  background-color: #f2f2f2;
+  padding: 60px 0;
+}
+
+.contenido-seccion {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.titulo-seccion {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 
 .col {
-  flex-basis: 300px;
-  margin: 0 20px;
-  text-align: left;
+  width: 30%;
 }
 
 .col h2 {
-  font-size: 28px;
+  font-size: 24px;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
-.col i {
-  margin-right: 10px;
+.col a {
+  color: #333;
+}
+
+.col a:hover {
+  text-decoration: none;
 }
 
 .info-contacto {
   font-size: 20px;
+  font-weight: 400;
 }
 
-.fila:last-child {
-  margin-bottom: 0;
-}
-
-form {
-  margin-top: 30px;
-  text-align: left;
+.reds-sociales {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
-form label {
+.reds-sociales li {
+  margin-right: 10px;
+}
+
+.reds-sociales a {
+  color: #333;
+  display: block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  transition: all 0.3s ease;
+}
+
+.reds-sociales a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.col form {
+  margin-top: 20px;
+}
+
+.col form label {
+  font-size: 18px;
+  font-weight: 700;
   display: block;
   margin-bottom: 5px;
-  font-size: 20px;
 }
 
-form input,
-form textarea {
-  font-size: 20px;
-  padding: 5px;
+.col form input,
+.col form textarea {
   width: 100%;
+  padding: 10px;
   margin-bottom: 20px;
   border: none;
-  border-bottom: 2px solid #ccc;
-  max-width: 400px;
+  border-radius: 4px;
 }
 
-form input[type="submit"] {
-  background-color: #4caf50;
-  color: white;
-  border: none;
+.col form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
   padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  max-width: 200px;
+  transition: all 0.3s ease;
 }
 
-form input[type="submit"]:hover {
-  background-color: #3e8e41;
+.col form input[type="submit"]:hover {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
 }
 
-.fila:last-child {
-  margin-bottom: 0;
+.col p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
-a {
-  text-decoration: none;
-  color: #000;
-  font-size: 20px;
+/* Sección de derechos de autor */
+.copyright {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
 }
 
-a:hover {
-  text-decoration: underline;
+/* Ajustes para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .fila {
+    flex-direction: column;
+  }
+
+  .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
