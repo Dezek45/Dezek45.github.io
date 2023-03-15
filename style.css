@@ -199,7 +199,7 @@ p {
 .habilidades .titulo-seccion {
   text-align: center;
   margin-bottom: 40px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .habilidades h3 {
@@ -391,6 +391,7 @@ p {
 .redes-sociales li {
   margin: 0 10px;
   transition: transform 0.3s ease-in-out;
+  position: relative;
 }
 
 .redes-sociales li:hover {
@@ -401,6 +402,24 @@ p {
   font-size: 20px;
   color: #000;
   transition: color 0.3s ease-in-out;
+}
+
+.redes-sociales a[title]::before {
+  content: attr(title);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #f44336;
+  color: #000;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.redes-sociales li:hover a[title]::before {
+  opacity: 1;
 }
 
 .redes-sociales a:hover i {
@@ -466,5 +485,4 @@ p {
 .copyright p {
   margin: 0;
 }
-
  /* Utilice la página https://glitch.com para el orden de este CSS */
